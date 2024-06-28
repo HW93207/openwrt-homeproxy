@@ -14,8 +14,9 @@ jobs:
       fail-fast: false
       matrix:
         arch:
-          - aarch64_cortex-a53
+          # - aarch64_cortex-a53
           - x86_64
+          - mipsel_24kc_24kf
 
     steps:
       - uses: actions/checkout@main
