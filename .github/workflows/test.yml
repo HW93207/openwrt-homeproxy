@@ -1,0 +1,15 @@
+name: bulid 2 package
+
+on:
+  push:
+    tags:
+      - 'v.*'
+
+jobs:
+  build:
+    name: 构建处理
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 打印标签信息
+        run: echo "触发的事件是 ${{ github.event_name }}, 标签名称是 ${{ github.ref }}"
