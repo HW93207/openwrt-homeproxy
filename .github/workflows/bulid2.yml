@@ -1,10 +1,10 @@
 name: bulid 2 package
 
 on:
- workflow_dispatch:
- push:
-   tags:
-     - v.**
+  workflow_dispatch:
+  push:
+    tags:
+      - v.**
 
 jobs:
   build:
