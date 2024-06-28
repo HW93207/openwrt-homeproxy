@@ -1,10 +1,10 @@
-name: bulid 2 package
+name: kcuf 2 package
 
 on:
  workflow_dispatch:
-  push:
-    tags:
-      - v.**
+ push:
+   tags:
+     - v.**
 
 jobs:
   build:
